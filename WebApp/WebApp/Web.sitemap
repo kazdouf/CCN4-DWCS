@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="MENU"  description="">
+    <siteMapNode url="AjouterConducteur.aspx" title="Ajouter Conducteur"  description="" />
+    <siteMapNode url="ListeAccidentesWebService.aspx" title="Liste Accidents WebService"  description="" />
+    <siteMapNode url="ListeConducteurs.aspx" title="Liste Conducteurs"  description="" />
+    
+    <siteMapNode url="LstVehiculesEntreDeuxDates.aspx" title="Liste Vehicules Entre Deux Dates"  description="" />
+    <siteMapNode url="MAJVoiture.aspx" title="Mise a jour Voitures"  description="" />
+    <siteMapNode url="NbrAccidents.aspx" title="Nombre Accidents (Etat)"  description="" />
+    <siteMapNode url="Login.aspx" title="Login"  description="" />
+  </siteMapNode>
+</siteMap>
