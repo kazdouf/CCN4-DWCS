@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="MENU : "  description="">
+    <siteMapNode url="~/Administration/UsersComptes.aspx" title="comptes utilisateurs"  description="" />
+    
+    <siteMapNode url="~/Students/PartagerDoc.aspx" title="Partager Document"  description="" />
+    <siteMapNode url="~/Students/ListeDocs.aspx" title="Liste des documentes"  description="" />
+    <siteMapNode url="~/Students/DocsBtweenDates.aspx" title="Liste documentes entre duex dates"  description="" />
+    <siteMapNode url="~/Students/webServiceDocsForTheme.aspx" title="web service documents for theme"  description="" />
+    
+    <siteMapNode url="~/login.aspx" title="Login"  description="" />
+    <siteMapNode url="~/inscription.aspx" title="Inscription"  description="" />
+    
+  </siteMapNode>
+</siteMap>

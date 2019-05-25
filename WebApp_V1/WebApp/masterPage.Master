@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="WebAppCCN4V2.masterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 77px;
+            width: 862px;
+        }
+        .auto-style3 {
+            height: 51px;
+            width: 862px;
+        }
+        .auto-style5 {
+            height: 434px;
+            vertical-align: top;
+        }
+        .auto-style6 {
+            height: 77px;
+            width: 1390px;
+        }
+        .auto-style7 {
+            height: 51px;
+            width: 1390px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style6" style="background-color: #66CCFF">
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px" DataSourceID="SiteMapDataSourcePlan">
+                            <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#F7F6F3" />
+                            <DynamicSelectedStyle BackColor="#5D7B9D" />
+                            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#5D7B9D" />
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSourcePlan" runat="server" />
+                        <br />
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                        </asp:SiteMapPath>
+                    </td>
+                    <td class="auto-style2" style="background-color: #66CCFF">Bienvenue
+                        <asp:LoginName ID="LoginName1" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" colspan="2" style="background-color: #CCCCFF">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7" style="background-color: #66CCFF">Tel :
+                        <br />
+                        Faxe : </td>
+                    <td class="auto-style3" style="background-color: #66CCFF">Adresse :
+                        <br />
+                        Identifivation Fiscale : </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
