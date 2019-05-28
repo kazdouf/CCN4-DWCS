@@ -21,38 +21,13 @@ namespace WebApp_EFM2018_V1_1.Prive
             da.Fill(dt);
         }
 
-        protected void btnSupprimer_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             if (GridView1.SelectedIndex <= -1 || GridView1.SelectedIndex > GridView1.Rows.Count)
                 Response.Write("<script language='javascript'>alert('vous devez selectioner la ligne dabord');</script>");
             else
-            {
-                da = new SqlDataAdapter("select * from Louer where NumLocation=" + GridView1.SelectedDataKey.Value.ToString(), cn);
-                dt = new DataTable();
-                da.Fill(dt);
-                dt.Rows[0].Delete();
-                SqlCommandBuilder cb = new SqlCommandBuilder(da);
-                da.Update(dt);
-                GridView1.DataBind();
-            }
+                Response.Redirect("~/Prive/eventLocation.aspx?numL=" + GridView1.SelectedDataKey.Value.ToString());
 
-        }
-
-        protected void btnRapporter_Click(object sender, EventArgs e)
-        {
-            if(GridView1.SelectedIndex <= -1 || GridView1.SelectedIndex > GridView1.Rows.Count)
-                Response.Write("<script language='javascript'>alert('vous devez selectioner la ligne dabord');</script>");
-            else
-            Response.Redirect("~/Prive/eventLocation.aspx?numL="+GridView1.SelectedDataKey.Value.ToString());
-        }
-        
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            
-        }
-
-        protected void GridView1_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
-        {
         }
     }
 }

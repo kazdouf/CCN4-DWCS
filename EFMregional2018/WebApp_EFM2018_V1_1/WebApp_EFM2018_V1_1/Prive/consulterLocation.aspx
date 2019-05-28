@@ -11,14 +11,14 @@
     <p class="auto-style6">
         CONSULTER LOCATION</p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="NumLocation" DataSourceID="SqlDataSource1" GridLines="Horizontal" OnRowDeleting="GridView1_RowDeleting" OnSelectedIndexChanging="GridView1_SelectedIndexChanging">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="NumLocation" DataSourceID="SqlDataSource1" GridLines="Horizontal">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:TemplateField HeaderText="Action" SortExpression="NumLocation">
+                <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
+                <asp:TemplateField HeaderText="Action" ShowHeader="False">
                     <ItemTemplate>
-                        <asp:Button ID="btnRapporter" runat="server" OnClick="btnRapporter_Click" Text="Rapporter" Width="72px" />
-                        <asp:Button ID="btnSupprimer" runat="server" OnClick="btnSupprimer_Click" OnClientClick="return confirm(&quot;vouslez-vous vraiment supprimer?&quot;);" Text="Supprimer" Width="72px" />
+                        <asp:Button ID="Button1" runat="server" CausesValidation="False" CommandName="Select" OnClick="Button1_Click" Text="Rapporter" />
+                        <asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm(&quot;voulezvous supprimer&quot;);" Text="Supprimer" />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField DataField="NumLocation" HeaderText="NumLocation" ReadOnly="True" SortExpression="NumLocation" />
