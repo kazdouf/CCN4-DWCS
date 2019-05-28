@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="WebApp_EFM2018_V1_2.masterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 585px;
+            vertical-align:top;
+        }
+        .auto-style3 {
+            width: 167px;
+            height: 49px;
+        }
+        .auto-style4 {
+            height: 585px;
+            width: 167px;
+            vertical-align:top;
+        }
+        .auto-style5 {
+            height: 49px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3" style="background-color: #CCCCCC">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </td>
+                    <td class="auto-style5" style="background-color: #993300">Bienvenue
+                        <asp:LoginName ID="LoginName1" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" style="background-color: #CCCCCC">
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" StaticSubMenuIndent="10px" DataSourceID="SiteMapDataSourcePlan">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSourcePlan" runat="server" />
+                    </td>
+                    <td class="auto-style2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
